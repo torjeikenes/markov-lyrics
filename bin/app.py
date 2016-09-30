@@ -2,7 +2,7 @@ import web
 from MarkovRap import testMarkov
 
 urls = (
-    '/hello', 'index'
+    '/russesang', 'index'
 )
 
  
