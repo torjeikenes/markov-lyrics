@@ -2,7 +2,7 @@ import web
 from MarkovRap import testMarkov
 
 urls = (
-    '/russesang', 'index'
+    '/', 'index'
 )
 
  
@@ -16,7 +16,8 @@ class index:
 
     def POST(self):
         form = web.input(startword="")
-        lyric = testMarkov(form.startword)
+        lyric = testMarkov(form.startword).lower()
+        web.header('Content-Type', "text")
         return render.index(lyric = lyric)
 
 if __name__ == "__main__":
