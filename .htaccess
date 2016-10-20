@@ -1,0 +1,4 @@
+<Files "markov-lyrics/code.py">
+    SetHandler wsgi-script
+    Options ExecCGI FollowSymLinks
+</Files>
