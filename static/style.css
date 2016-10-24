@@ -1,14 +1,21 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   color: #404040;
   background-color: #eee;
   text-align: center;
+  margin: 0 0 120px; /* bottom = footer height */
  }
 
 .container {
   width: 520px;
   margin-top: 20px;
   margin: auto;
+  margin-bottom: 20px;
 }
 
 h1 {
@@ -30,14 +37,14 @@ p {
 }
 
 footer {
-  position: absolute;
-  width: 100%;
-  padding: 1em;
   color: black;
   background-color: #7e7e7e;
-  clear: left;
-  text-align: center;
+  position: absolute;
+  left: 0;
   bottom: 0;
+  height: 100px;
+  width: 100%;
+
 }
 
 a.button {
